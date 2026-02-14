@@ -32,7 +32,7 @@ jobs:
         
     - name: Push to Docker Hub
       run: |
-        docker tag fastapi-demo:latest dor28/fastapi-demo:latest
-        docker tag fastapi-demo:latest dor28/fastapi-demo:${{ github.sha }}
-        docker push dor28/fastapi-demo:latest
-        docker push dor28/fastapi-demo:${{ github.sha }}
+        docker tag fastapi-demo:latest humoyundeveloper/fastapi-demo:latest
+        docker tag fastapi-demo:latest humoyundeveloper/fastapi-demo:${{ github.sha }}
+        docker push humoyundeveloper/fastapi-demo:latest
+        docker push humoyundeveloper/fastapi-demo:${{ github.sha }}
